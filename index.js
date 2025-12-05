@@ -9,8 +9,8 @@ app.post('/login', (req, res) => {
     const { usuario, password } = req.body;
 
     const usuariosPermitidos = [
-        { user: "Hedam", pass: "admin.05", nombre: "Admin Supremo" },
-        { user: "Streaming", pass: "diel.1415", nombre: "Stream Mix (Socio)" },
+        { user: "hedam", pass: "admin.05", nombre: "Admin Supremo" },
+        { user: "streaming", pass: "diel.1415", nombre: "Stream Mix (Socio)" },
         { user: "user09", pass: "2025", nombre: "Vendedor 1" }
     ];
 
@@ -29,4 +29,5 @@ app.post('/login', (req, res) => {
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Servidor corriendo en puerto ${port}`);
+
 });
